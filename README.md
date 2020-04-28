@@ -1,6 +1,6 @@
 # CMPT 120: Data Processing Assignment
 ### Introduction
-The Data Processing Assignment was the final assignment of CMPT 120 in the Fall 2019 semester at SFU. Approximately 2 weeks were given to complete the assignment. The option to complete the assignment as a team existed however this assignment was completed individually. Provided code was given by Professor Diana Cukierman to read and write to .csv files, but all other code is my own. The assignment was written in Python 3.7, and is included as **dataProcessing.py**.
+The Data Processing Assignment was the final assignment of CMPT 120 in the Fall 2019 semester at SFU. Approximately 2 weeks were given to complete the assignment. The option to complete the assignment as a team existed however this assignment was completed individually. Provided code was given by Professor Diana Cukierman to read and write to .csv files, found as in **codeProvided.py** and copied to the final assignment file, but the rest of the program is my own work. The assignment was written in Python 3.7, and is included as **dataProcessing.py**.
 
 In addition to the programming assignment, we were tasked with creating a flowchart to better visualize and explain the top (global) level of the file, which has been included as **Flowchart.jpg**.
 
@@ -31,10 +31,19 @@ Where the first line represents the student that is responding to a survey, and 
 
 The input file can contain any number of names, and any number of responses. However, the number of responses per name must be the same for all names. For example, if NameA had responded to 10 questions then any consecutive responder must have also responded to 10 questions as well.
 
-From the input file, we were tasked with analyzing the similarity of responses between any pairs of students, with us having to output:
+From the input file, we were tasked with analyzing the similarity of responses between any pairs of students, with us having to print:
 | Percentage/number of similar responses between a pair of students | Message to output to user |
 | --- | ---|
 | If 90% of the responses were the same between the students (same number in the same column) | Output "really have a lot in common (>90%)!" |
 | If 50% or more of the responses were the same | Output "have about half opinions in common!" |
 | 2 or more responses to questions were the same | Output "have just a few opinions in common (<50%)" |
 | Less than 2 responses the same | Output "have nothing in common!" |
+
+After printing the designated text to the user, the mean response value was calculated per student and was outputted to a different .csv file in the following format:
+> NameA 2.85714285714285\
+> NameB 2.85714285714285\
+> NameC 2.142857143
+
+With the student's name beside their corresponding mean response value.
+An example input file can be found as **IN_all_data.txt** and the corresponding output file as **OUT_perstudent.csv**.
+
