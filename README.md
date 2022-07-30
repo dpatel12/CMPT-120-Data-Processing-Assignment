@@ -37,7 +37,7 @@ From the input file, we were tasked with analyzing the similarity of responses b
 | If 90% of the responses were the same between the students (the same number in the same column) | Output "really have a lot in common (>90%)!" |
 | If 50% or more of the responses were the same | Output "have about half opinions in common!" |
 | 2 or more responses to questions were the same | Output "have just a few opinions in common (<50%)" |
-| Less than 2 responses with the same | Output "have nothing in common!" |
+| Less than 2 responses the same | Output "have nothing in common!" |
 
 After printing the designated text to the user, the mean response value was calculated per student and was outputted to a different .csv file in the following format:
 > NameA 2.85714285714285\
